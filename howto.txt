@@ -2,4 +2,4 @@ Install guide:
 go to folder directory
 in terminal shell run "npm install"
 to install dependensies run following commands:
-npm install sass -dev --save
+npm install --save-dev sass
