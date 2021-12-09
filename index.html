@@ -8,26 +8,52 @@
   </head>
   <body>
     <nav></nav>
-    <section id="splash"></section>
+    <section id="splash">
+      <!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="/videos/nail1.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <h1>Velkommen til By Mikkelsen</h1>
+  <p>
+    Dette er stedet for du kan føle dig velkommen og tryg. 
+    Hos By Mikkelsen kan du finde neglebehandler tilpasset<br> til dig og dine negle. 
+    Alle de produkter som bliver brugt hos By Mikkelsen er det professionelle mærke CND<br> Shellac, 
+    de giver de smukkeste lakeringer med høj glans.
+  </p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button class="bookButtonLight">Book Tid</button>
+</div>
+    </section>
     <section id="values">
+      <div class="content">
       <article>
-        <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/930/227/6eb.png">
-        <h3>valuetext</h3>
-        <p>some text goes here</p>
+        <div class="imgContainer">
+          <img src="/illustrations/forstaerkning.png">
+        </div>
+        <h3>Forstærkning</h3>
+        <p>Du kan forstærkning af dine negle så de bliver stærkere og mere holdbare.</p>
       </article>
       <article>
-        <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/930/227/6eb.png">
-        <h3>valuetext</h3>
-        <p>some text goes here</p>
+        <div class="imgContainer">
+          <img src="/illustrations/shellac.png">
+        </div>
+        <h3>CND Shellac</h3>
+        <p>CND Shellac giver smukke lakeringer med høj glans, der holder i 14+ dage.</p>
       </article>
       <article>
-        <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/930/227/6eb.png">
-        <h3>valuetext</h3>
-        <p>some text goes here</p>
+        <div class="imgContainer">
+          <img src="/illustrations/oplevelse.png">
+        </div>
+        <h3>God Oplevelse</h3>
+        <p>Jeg garanterer at du får en god oplevelse hvor du kan føle dig tryg.</p>
       </article>
+    </div>
     </section>
     <section id="trustpilot">
-      <h2>this is a section</h2>
+      <h2>Kunderne siger..</h2>
       <article>
         <div><img></div>
         <div class="trustpilot"></div>
@@ -36,15 +62,19 @@
     <section id="praktisk_info">
       <div class="topColumn">
         <div>
-          <h3>some header</h3>
-          <p>text text text</p>
+          <h3>Åbningstider</h3>
+          <p>Mandag - Fredag: 07:00 - 22:00<br>
+            Lørdag - Søndag: 09:00 - 22:00</p>
         </div>
         <div>
-          <h3>some header</h3>
-          <p>text text text</p>
+          <h3>Adresse</h3>
+          <p>Herlev Hovedgade 127 kld,<br>
+            2730 Herlev, Danmark</p>
         </div>
       </div>
-      <div class="mapsView"></div>
+      <div class="mapsView">
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=by%20mikkelsen,%20Herlev%20Hovedgade%20127,%202730%20Herlev,%20Denmark&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;}</style></div></div>
+      </div>
     </section>
     <section id="instagram_feed">
       <h2>another header</h2>

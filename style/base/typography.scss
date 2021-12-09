@@ -1,0 +1,27 @@
+//fonts and font family rules
+
+//h1
+
+@font-face {
+    font-family: 'crimsontext';
+    src: url('/fonts/crimsontext-bolditalic-webfont.woff2');
+}
+
+h1 {
+font-family: 'crimsontext';
+font-size: 50px;
+margin-bottom: 10px;
+margin-top: 0;
+}
+
+//p
+
+@font-face {
+    font-family: poppins;
+    src: url('/fonts/poppins-regular-webfont.woff2');
+}
+
+p {
+    font-family: poppins;
+    font-size: 16px;
+}
