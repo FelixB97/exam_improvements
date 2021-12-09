@@ -1,0 +1,43 @@
+//navigation - Menu
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    background-color: white;
+    align-items: center;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+
+}
+
+#header_logo {
+    height: 35px;
+    margin-left: 50px;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+
+#header_logo:hover {
+    transform: scale(1.1,1.1);
+}
+
+.main_links {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    a {
+        color: black;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+    a:hover {
+        color: blue;
+        transform: scale(1.1,1.1);
+    }
+}
