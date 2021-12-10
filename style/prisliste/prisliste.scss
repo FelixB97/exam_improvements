@@ -1,47 +1,48 @@
 @import '../global_variables/mediaquery.scss';
 @import '../global_variables/colors.scss';
 
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 35px;
+}
+
 #prisliste {
-    h1 {
-        text-align: center;
-    }
-    h2 {
-        font-size: 35px;
-    }
-    .double_line {
-        display: none;
-    }
-    .parent {
+    margin: 90px 0;
+}
+
+.parent {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-template-rows: repeat(2, 2fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    .container {
         margin: 0 auto;
-        max-width: 1100px;
-        display: grid;
-        align-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-        grid-template-rows: repeat(2, 2fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 30px;
-        .container {
-            margin: 0 auto;
-        }
-        table {
-            .single {
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-    
-                padding: 10px 0;
-                .behandlingspris,
-                .varighed {
-                    white-space: nowrap;
-                }
+    }
+    table {
+        .single {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            padding: 10px 0;
+            .behandlingspris,
+            .varighed {
+                white-space: nowrap;
             }
-            td:first-child {
-                width: 45% ;
-            }
-            
         }
+        td:first-child {
+            width: 45% ;
+        }
+        
     }
 }
+
 
 @media (min-width: $desktop){
     #prisliste {
@@ -50,8 +51,9 @@
         }
         .parent {
             background-image: url("/public/illustrations/frame.png");
-            background-size: cover;
+            background-size: contain;
             background-repeat: no-repeat;
+            background-position: center;
         }
     }
 }
