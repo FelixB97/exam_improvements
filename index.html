@@ -74,8 +74,10 @@
     <section id="trustpilot">
       <h2>Kunderne siger..</h2>
       <article>
-        <div><img></div>
-        <div class="trustpilot"></div>
+        <div class="container"><img src="/images/trust.png"></div>
+        <div class="trustpilot container">
+          <!-- TrustBox widget --> <div class="trustpilot-widget" data-locale="da" data-template-id="539ad60defb9600b94d7df2c" data-businessunit-id="476d300f0000640005020714" data-style-height="500px" data-style-width="100%"> <a href="https://dk.trustpilot.com/review/bymikkelsen.dk" target="_blank">Trustpilot</a></div> <!-- End TrustBox widget -->
+        </div>
       </article>
     </section>
     <section id="praktisk_info">
@@ -96,10 +98,17 @@
       </div>
     </section>
     <section id="instagram_feed">
-      <h2>another header</h2>
-      <article></article>
+      <h2>Instagram</h2>
+      <article>
+        <div class="embedsocial-hashtag" data-ref="ad398b9cc0877d613c3b3a9b4c03e463d5001077"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script>
+      </article>
     </section>
     <footer></footer>
     <script type="module" src="/main.js"></script>
+    <!-- move this to js  -->
+    <script>
+      !function(){"use strict";var t=document,e=function(){var e,r,o;if(t.getElementsByClassName)e=t.getElementsByClassName("trustpilot-widget");else if(t.querySelectorAll)e=t.querySelectorAll(".trustpilot-widget");else{var s=[],a=new RegExp("(^| )trustpilot-widget( |$)"),l=t.body.getElementsByTagName("*");for(r=0,o=l.length;r<o;r++)a.test(l[r].className)&&s.push(l[r]);e=s}for(r=0;r<e.length;++r)for(var i=e[r];i.firstChild;)i.removeChild(i.firstChild)};e(),t.addEventListener?t.addEventListener("DOMContentLoaded",e):t.attachEvent("onreadystatechange",function(){"complete"==t.readyState&&e()});var r="https:"==t.location.protocol?"https:":"http:",o=r+"//widget.trustpilot.com",s=t.createElement("script");s.src=o+"/bootstrap/v5/tp.widget.bootstrap.min.js",s.async=!0,s.defer=!0,t.querySelector("head").appendChild(s)}();
+//# sourceMappingURL=tp.widget.sync.bootstrap.min.js.map
+    </script>
   </body>
 </html>

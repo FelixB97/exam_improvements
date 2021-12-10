@@ -90,6 +90,22 @@ body {
 //trustpilot section
 
 #trustpilot {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    max-width: 1100px;
+    article {
+        margin: auto;
+        display: flex;
+        background-color: $darkPink;
+        .container {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+        }
+    }
     h2 {
         text-align: center;
     }
@@ -97,10 +113,26 @@ body {
 //pratisk_info section
 
 #praktisk_info {
+    margin-bottom: 150px;
     .topColumn {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        margin-bottom: 75px;
     }
     
+}
+
+//instagram_feed section 
+
+#instagram_feed {
+    
+
+    h2 {
+        text-align: center;
+    }
+    article {
+        max-width: 1100px;
+        margin: auto;
+    }
 }

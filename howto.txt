@@ -3,3 +3,22 @@ go to folder directory
 in terminal shell run "npm install"
 to install dependensies run following commands:
 npm install --save-dev sass
+
+
+How to git:
+remember to work and push in branches.
+
+step 1:
+use $git status to check for changes
+
+Step 2: 
+use $git add to add changes before commiting (use git add .) to add all new changes
+
+Step 3:
+use $git commit -m "commit message" to commit all added changes.
+
+Step 4: 
+use $git push to push changes to repository, if promted to set upstream do that.
+
+Step 5: 
+go to github.com and create a pull request for the new branch to be merged with the master branch.
