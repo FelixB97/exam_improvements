@@ -90,6 +90,11 @@ body {
 //trustpilot section
 
 #trustpilot {
+    display: flex;
+    flex-direction: column;
+    article {
+        margin: auto;
+    }
     h2 {
         text-align: center;
     }
