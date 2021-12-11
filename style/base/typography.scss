@@ -25,3 +25,25 @@ p, td {
     font-family: poppins;
     font-size: 16px;
 }
+
+// special font for quotation
+@font-face {
+    font-family: oswald;
+    src: url('/fonts/Oswald-Bold.woff2');
+}
+
+//h4 for reviews on landing page
+
+@font-face {
+    font-family: poppins-bold;
+    src: url('/fonts/Poppins-SemiBold.woff2');
+}
+
+@font-face {
+    font-family: poppins-Semibold;
+    src: url('/fonts/Poppins-Bold.woff2');
+}
+@font-face {
+    font-family: poppins-Medium;
+    src: url('/fonts/Poppins-Medium.woff2');
+}
