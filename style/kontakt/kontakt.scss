@@ -1,5 +1,32 @@
 // kontakt side styling
 
+//kontakt info styling
+
+#kontakt_form {
+    display:flex;
+    margin-top: 100px;
+    h2 {
+        font-size: 50px;
+    }
+}
+
+#kontakt_information {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+@import '../global_variables/colors';
 //colors
 
 $darkGrey:#212323;
@@ -12,17 +39,20 @@ $fontColor: #ffffff;
 
 $linkColor: #3D7AC9;
 
-#send_email {
+// mail form styling
+
+#kontakt_form #send_email {
     max-width: 500px;
     border-style: none;
     border-width: 5px;
-    border-color: $red;
+    border-color: $darkPink;
     padding: 30px 40px 30px 40px;
     display: flex;
     flex-direction: column;
     h2 {
         margin-bottom: 20px;
-        color: $red;
+        color: black;
+        text-align: center;
     }
 }
 @media (min-width: 1000px) {
@@ -31,9 +61,9 @@ $linkColor: #3D7AC9;
     }
 }
 
-#submit_email {
+#kontakt_form #submit_email {
 all: initial;
-background-color: $brightGreen;
+background-color: $darkPink;
 // height: 50px;
 width: 250px;
 border-radius: 10px;
@@ -46,12 +76,12 @@ margin-top: 10px;
 padding: 10px;
 }
 
-.form-field {
+#kontakt_form .form-field {
     background-color: white;
     transition-duration: 1s;
-    border-color: $darkGrey;
+    border-color: $darkPink;
     border-width: 3.5px;
-    // border-radius: 2px;
+    border-radius: 5px;
     padding: 0.75rem;
     color: $darkGrey;
     font-size: 1rem;
@@ -60,7 +90,7 @@ padding: 10px;
     flex-grow: 1;
 
     &:hover {
-        border-color: $darkGrey;
+        border-color: $darkPink;
     }
 
     &:focus {
@@ -72,19 +102,11 @@ padding: 10px;
         border-color: $brightGreen;
     }
     
-    // &:focus:required:invalid {
-    //     border-color: $red;
-    // }
-    
     &:not(:focus):not(:placeholder-shown):invalid {
       border-color: $red;
       animation: error;
       animation-duration: .4s;
     }
-    
-    // &input:not(:focus):not(:placeholder-shown):invalid {
-    //   display: block; 
-    // }
     
     &:not(:focus):not(:placeholder-shown):valid {
       border-color: $brightGreen;
@@ -92,14 +114,14 @@ padding: 10px;
       
 }
 
-.form-label {
+#kontakt_form .form-label {
     color: white;
     margin-bottom: 0.4rem;
     display: block;
     margin-left: 5px;
 }
 
-.input-group {
+#kontakt_form .input-group {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -108,9 +130,9 @@ padding: 10px;
     > .form-field {
         padding-right: 2.5rem;
 
-        &:focus ~ .form-icon > svg {
-            stroke: $red;
-        }
+        // &:focus ~ .form-icon > svg {
+        //     stroke: $red;
+        // }
     }
 
     > .form-icon {
@@ -124,20 +146,16 @@ padding: 10px;
         right: 0;
 
         > svg {
-            stroke: $red;
+            stroke: $darkPink;
         }
     }
 }
 
-button {
+#kontakt_form button {
     height: 36px!important;
 }
 
-.last_in_group {
-    // margin-top: 50px;
-}
-
-.button_success {
+#kontakt_form .button_success {
     background-color: grey!important;
     display: flex!important;
     justify-content: center!important;
@@ -147,18 +165,16 @@ button {
         animation-iteration-count: infinite!important;
         animation-timing-function: ease-in-out!important;
         animation-duration: 1.5s!important;
-    
-    
         }
 }
 
-.post_success {
+#kontakt_form .post_success {
     display: flex!important;
     justify-content: center!important;
     padding: 10px 10px 10px 10px!important;
 }
 
-.button_error {
+#kontakt_form .button_error {
     background-color: $red!important;
     animation: error!important;
     animation-duration: 0.4s!important;
@@ -187,13 +203,13 @@ button {
     }
 }
 
-.fading_out_animation {
+#kontakt_form .fading_out_animation {
     animation: greenFadeOut!important;
     animation-duration: 1.5s!important;
     animation-timing-function: ease-in-out!important;
 }
 
-.fading_in_animation {
+#kontakt_form .fading_in_animation {
     animation: greenFadeIn!important;
     animation-duration: 1s!important;
     animation-timing-function: ease-in-out!important;

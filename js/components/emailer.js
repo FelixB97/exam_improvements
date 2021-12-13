@@ -121,7 +121,7 @@ function updateValues(imputPath, templateName) {
     }
     if (isNameValid == false || isEmailValid == false || isMessageValid == false) {
         document.querySelector("#send_email").style.borderColor = "#c1272d";
-        document.querySelector("#send_email h2").style.color = "#c1272d";
+        // document.querySelector("#send_email h2").style.color = "#c1272d";
     }
     
     
