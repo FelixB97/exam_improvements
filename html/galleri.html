@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>By Mikkelsen</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="../index.html"><img src="../images/logo.png" id="header_logo"></a>
+      </div>
+      <div class="main_links">
+        <a href="/behandlinger.html">Behandlinger</a>
+        <a href="/prisliste.html">Prisliste</a>
+        <a href="/ommikkelsen.html">Om By Mikkelsen</a>
+        <a href="/kontakt.html">Kontakt</a>
+      </div>
+      <div class="meny_book">
+        <div class="button_border_light">
+          <button class="lightbutton">BOOK TID</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="whole">
+      <div class="filter_parent">
+        <div class="filtre">
+          <div class="filter_container">
+            <div id="default_filter" class="filter valgt" data-item="12">
+              <img src="/public/illustrations/galleri/helfarve@2x.png" alt="helfarve negle">
+              <h3>Helfarve</h3>
+            </div>
+          </div>
+          <div class="filter_container">
+            <div class="filter valgt" data-item="13">
+              <img src="/public/illustrations/galleri/Baby Boomer@2x.png" alt="baby_boomer negle">
+              <h3>Baby&nbsp;Boomer</h3>
+            </div>
+          </div>
+          <div class="filter_container">
+            <div class="filter valgt" data-item="14">
+              <img src="/public/illustrations/galleri/fransk kant@2x.png" alt="fransk_kant negle">
+              <h3>Fransk&nbsp;Kant</h3>
+            </div>
+          </div>
+          <div class="filter_container">
+            <div class="filter valgt" data-item="15">
+              <img src="/public/illustrations/galleri/glitter@2x.png" alt="glitter negle">
+              <h3>Glitter</h3>
+            </div>
+          </div>
+          <div class="filter_container">
+            <div class="filter valgt" data-item="9">
+              <img src="/public/illustrations/galleri/forlængelse@2x.png" alt="forlaengelse negle">
+              <h3>Forlængelse</h3>
+            </div>
+          </div>
+          <div class="filter_container">
+            <div class="filter valgt" data-item="16">
+              <img src="/public/illustrations/galleri/design@2x.png" alt="design negle">
+              <h3>Design</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="container"></section>
+      <template>
+        <article id="grid-article">
+          <div class="room-gallery">
+            <img src="#" alt="" class="default gallery-highlight" />
+            <div class="room-preview">
+              <img src="#" alt="" class="billede1 room-active"/>
+              <img src="#" alt="" class="billede2" />
+              <img src="#" alt="" class="billede3" />
+              <img src="#" alt="" class="billede4" />
+            </div>
+          </div>
+          
+          <div class="information">
+            <h1 class="singleview-navn"></h1>
+            <p class="singleview-beskrivelse"></p>
+            <p class="singleview-varighed"></p>
+            <p class="singleview-pris"></p>
+            
+            <div class="button_container">
+              <div class="button_border_light">
+              <button class="lightbutton">Book Tid</button>
+              </div>
+            </div>
+          </div>
+          <h1 class="produktnavn"></h1>
+          <p class="produktpris"></p>
+        </article>
+      </template>
+
+    </section>
+
+    <section id="suggestions"></section>
+    <footer></footer>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/js/galleri.js"></script>
+  </body>
+</html>
