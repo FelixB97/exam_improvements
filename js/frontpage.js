@@ -1,6 +1,6 @@
 "use strict";
 
-export default function startFrontpage() {
+export default function loadFrontpage() {
     console.log("Frontpage Code Loading..");
     getReviews();
 }

@@ -3,6 +3,7 @@ go to folder directory
 in terminal shell run "npm install"
 to install dependensies run following commands:
 npm install --save-dev sass
+npm install emailjs-com --save
 
 
 How to git:

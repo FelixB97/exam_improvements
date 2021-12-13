@@ -1,0 +1,218 @@
+// kontakt side styling
+
+//colors
+
+$darkGrey:#212323;
+
+$red:#c1272d;
+
+$brightGreen:#46F591;
+
+$fontColor: #ffffff;
+
+$linkColor: #3D7AC9;
+
+#send_email {
+    max-width: 500px;
+    border-style: none;
+    border-width: 5px;
+    border-color: $red;
+    padding: 30px 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        margin-bottom: 20px;
+        color: $red;
+    }
+}
+@media (min-width: 1000px) {
+    #send_email {
+        border-style: solid;
+    }
+}
+
+#submit_email {
+all: initial;
+background-color: $brightGreen;
+// height: 50px;
+width: 250px;
+border-radius: 10px;
+text-align: center;
+font-size: 30px;
+cursor: pointer;
+color: $darkGrey;
+align-self: center;
+margin-top: 10px;
+padding: 10px;
+}
+
+.form-field {
+    background-color: white;
+    transition-duration: 1s;
+    border-color: $darkGrey;
+    border-width: 3.5px;
+    // border-radius: 2px;
+    padding: 0.75rem;
+    color: $darkGrey;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    transition: border 0.25s ease-in-out;
+    flex-grow: 1;
+
+    &:hover {
+        border-color: $darkGrey;
+    }
+
+    &:focus {
+        border-color: white;
+        outline: 0.25rem transparent;
+        // box-shadow: 0 0 0 0.25rem $input-outline-color;
+    }
+    &:valid {
+        border-color: $brightGreen;
+    }
+    
+    // &:focus:required:invalid {
+    //     border-color: $red;
+    // }
+    
+    &:not(:focus):not(:placeholder-shown):invalid {
+      border-color: $red;
+      animation: error;
+      animation-duration: .4s;
+    }
+    
+    // &input:not(:focus):not(:placeholder-shown):invalid {
+    //   display: block; 
+    // }
+    
+    &:not(:focus):not(:placeholder-shown):valid {
+      border-color: $brightGreen;
+    }
+      
+}
+
+.form-label {
+    color: white;
+    margin-bottom: 0.4rem;
+    display: block;
+    margin-left: 5px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 20px;
+
+    > .form-field {
+        padding-right: 2.5rem;
+
+        &:focus ~ .form-icon > svg {
+            stroke: $red;
+        }
+    }
+
+    > .form-icon {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.75rem;
+        top: 0;
+        bottom: 0;
+        right: 0;
+
+        > svg {
+            stroke: $red;
+        }
+    }
+}
+
+button {
+    height: 36px!important;
+}
+
+.last_in_group {
+    // margin-top: 50px;
+}
+
+.button_success {
+    background-color: grey!important;
+    display: flex!important;
+    justify-content: center!important;
+    padding: 10px 10px 10px 10px!important;
+        svg{
+        animation: success!important;
+        animation-iteration-count: infinite!important;
+        animation-timing-function: ease-in-out!important;
+        animation-duration: 1.5s!important;
+    
+    
+        }
+}
+
+.post_success {
+    display: flex!important;
+    justify-content: center!important;
+    padding: 10px 10px 10px 10px!important;
+}
+
+.button_error {
+    background-color: $red!important;
+    animation: error!important;
+    animation-duration: 0.4s!important;
+    border: solid 1px $red!important;
+    color: $darkGrey!important;
+}
+
+@keyframes success {
+    20%{
+        //do nothing
+    }
+    100% {
+        transform: rotate(2turn);
+    }
+    
+}
+@keyframes error {
+    10% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    80% {
+        transform: translateX(0px);
+    }
+}
+
+.fading_out_animation {
+    animation: greenFadeOut!important;
+    animation-duration: 1.5s!important;
+    animation-timing-function: ease-in-out!important;
+}
+
+.fading_in_animation {
+    animation: greenFadeIn!important;
+    animation-duration: 1s!important;
+    animation-timing-function: ease-in-out!important;
+}
+
+@keyframes greenFadeOut {
+    0%{
+       stroke: $darkGrey;
+    }
+    100%{
+       stroke: $brightGreen;
+    }
+}
+
+@keyframes greenFadeIn {
+    0%{
+        color: $brightGreen;
+    }
+    100% {
+        color: $darkGrey;
+    }
+}

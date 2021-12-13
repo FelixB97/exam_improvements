@@ -11,7 +11,13 @@ const id = urlParams.get("id");
 const link = "http://felixbryld.dk/kea/final_exam//wp-json/wp/v2/prisliste?per_page=100";
 
 //Load Site + function
-document.addEventListener("DOMContentLoaded", hentData);
+
+export default function loadPrisliste() {
+  console.log("loading prisliste js..");
+  hentData();
+}
+
+// document.addEventListener("DOMContentLoaded", hentData);
 
 async function hentData() {
   const respons = await fetch(link);
