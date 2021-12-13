@@ -1,8 +1,7 @@
 //FILTER
 let filter = "alle";
 let produkter;
-let container = document.querySelector("#container table");
-let temp = document.querySelector("template");
+const temp = document.querySelector("template");
 
 //URL + ID
 const urlParams = new URLSearchParams(window.location.search);
@@ -28,10 +27,12 @@ async function hentData() {
 
 function vis(produkter) {
     //Løber igennem array "produkter" fra JSON (WP)
-    container.innerHTML = "";
+    // container.innerHTML = "";
     //forEach Loop
-    produkter.forEach((produkt) => {
-        console.log(produkt);
+    produkter.reverse().forEach((produkt) => {
+        // console.log(produkt.categories[0]);
+        const container = document.querySelector(`.category${produkt.categories[0]}`);
+        // console.log(produkt);
         const klon = temp.cloneNode(true).content;
         klon.querySelector(".behandlingsnavn").textContent = produkt.behandlingsnavn;
         klon.querySelector(".behandlingspris").textContent = produkt.pris;
