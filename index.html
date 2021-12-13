@@ -26,7 +26,7 @@
     <section id="splash">
       <!-- The video -->
 <video autoplay muted loop id="myVideo">
-  <source src="/videos/nail1.mp4" type="video/mp4">
+  <source src="/videos/splash_video.mp4" type="video/mp4">
 </video>
 
 <!-- Optional: some overlay text to describe the video -->
@@ -74,11 +74,30 @@
     <section id="trustpilot">
       <h2>Kunderne siger..</h2>
       <article>
-        <div class="container"><img src="/images/trust.png"></div>
-        <div class="trustpilot container">
-          <!-- TrustBox widget --> <div class="trustpilot-widget" data-locale="da" data-template-id="539ad60defb9600b94d7df2c" data-businessunit-id="476d300f0000640005020714" data-style-height="500px" data-style-width="100%"> <a href="https://dk.trustpilot.com/review/bymikkelsen.dk" target="_blank">Trustpilot</a></div> <!-- End TrustBox widget -->
+        <div class="container">
+          <img src="/images/trust.png">
+        </div>
+        <div class="trustpilotC container">
+            <!-- the reviews get added here -->
         </div>
       </article>
+      <div><h3>see all our reviews at:</h3></div>
+      <template id="reviewTemplate">
+        <!-- something goes here -->
+        <div class="templateContainer">
+          <h3 class="quotation">“</h3>
+          <h3 class="shortReview">Best on the market</h3>
+          <div class="starContainer">
+            <div class="hidden"><img src="/illustrations/star.svg" class="star1 starShape"></div>
+            <div class="hidden"><img src="/illustrations/star.svg" class="star2 starShape"></div>
+            <div class="hidden"><img src="/illustrations/star.svg" class="star3 starShape"></div>
+            <div class="hidden"><img src="/illustrations/star.svg" class="star4 starShape"></div>
+            <div class="hidden"><img src="/illustrations/star.svg" class="star5 starShape"></div>
+          </div>
+          <p class="longReview">longer review i think this is an amazing service...</p>
+          <h4 class="reviewer">Felix Bryld</h4>
+        </div>
+      </template>
     </section>
     <section id="praktisk_info">
       <div class="topColumn">
