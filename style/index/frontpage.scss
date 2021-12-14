@@ -1,4 +1,5 @@
 @import '../global_variables/colors';
+@import '../global_variables/mediaquery.scss';
 //move to base
 body {
     margin: 0;
@@ -11,7 +12,7 @@ body {
 
 #splash {
     height: 50vh;
-    margin-top: 55px;
+    // margin-top: 55px;
     text-align: center;
     position: relative;
     background: url("/videos/rain.mp4") no-repeat;
@@ -40,6 +41,10 @@ body {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
+    }
+    p {
+        padding: 0 40px 20px 40px;
+        
     }
 }
 
@@ -189,5 +194,70 @@ body {
     article {
         max-width: 1100px;
         margin: auto;
+    }
+}
+
+
+
+//responsiveness
+@media (max-width: $mobile){
+    #trustpilot article {
+        height: 100%;
+        .leftContainer {
+            display:none;
+    }
+    .trustpilotC {
+        overflow-y: auto;
+        padding-bottom: 40px;
+        .templateContainer {
+            min-height: 0%;
+    }
+    }
+    }
+    #values {
+        .content {
+            position: relative;
+            height: 500px;
+            article {
+                position:absolute;
+                width: 155px;
+                h3 {
+                    font-size: 25px;
+                }
+            }
+            article:nth-child(1) {
+                top:70%;
+                right:55%;
+            }
+            article:nth-child(2) {
+                top:15%;
+            }
+            article:nth-child(3) {
+                top:70%;
+                left: 55%;
+            }
+        }
+    }
+    #splash {
+        height: 60vh;
+        overflow-y: hidden;
+        .content {
+            background: rgb(210,183,187);
+            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
+        }
+        video {
+            display:none;
+        }
+        img {
+            width:100%;
+        }
+    }
+}
+
+@media (min-width: $desktop){
+    #splash {
+        img {
+            display: none;
+        }
     }
 }
