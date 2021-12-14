@@ -26,14 +26,18 @@
     <section id="kontakt_form">
       <article id="kontakt_information">
         <div>
+          <div class="columnTop">
         <h2>Kontakt</h2>
         <p>By Mikkelsen</p>
         <p>Herlev Hovedgade 127 kld, 2730 Herlev</p>
         <p>Tlf: +45 20 65 03 63</p>
         <p>E-mail: ewa@bymikkelsen.dk</p>
+      </div>
+      <div>
         <h2>Åbningstider</h2>
         <p>Mandag - Fredag: 07:00 - 22:00</p>
         <p>Lørdag - Søndag: 09:00 - 22:00</p>
+      </div>
       </div>
       </article>
       <article id="send_email">
@@ -41,9 +45,9 @@
         <h2>Send mig en Email</h2>
         <!-- NAME -->
         <div class="form-group">
-          <label for="username" class="form-label">Full Name or Company Name</label>
+          <label for="username" class="form-label"> Navn</label>
           <div class="input-group">
-            <input class="form-field" required type="text" name="username" id="username" placeholder="name or company" minlength="1"/>
+            <input class="form-field" required type="text" name="username" id="username" placeholder="Navn" minlength="1"/>
             <span class="form-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
             </span>
@@ -52,9 +56,9 @@
 
         <!-- EMAIL ADDRESS -->
         <div class="form-group">
-          <label class="form-label" for="email"> Your Email address</label>
+          <label class="form-label" for="email"> Email adresse</label>
           <div class="input-group">
-            <input class="form-field" type="text" name="email" id="email" placeholder="email address" minlength="2" required pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"/>
+            <input class="form-field" type="text" name="email" id="email" placeholder="Email adresse" minlength="2" required pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"/>
             <span class="form-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -66,9 +70,9 @@
 
         <!-- MESSAGE -->
         <div class="form-group last_in_group">
-          <label class="form-label" for="message"> Your Message</label>
+          <label class="form-label" for="message"> Din Besked</label>
           <div class="input-group">
-            <textarea minlength="1" required type="text" class="form-field" name="message" id="message" cols="30" rows="4" placeholder="write a message"></textarea>
+            <textarea minlength="1" required type="text" class="form-field" name="message" id="message" cols="30" rows="4" placeholder="Din Besked"></textarea>
           </div>
         </div>
 

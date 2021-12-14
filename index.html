@@ -8,6 +8,7 @@
   </head>
   <body>
     <nav>
+      <div class="navContainer">
       <div>
         <a href="/index.html"><img src="./images/logo.png" id="header_logo"></a>
       </div>
@@ -17,9 +18,29 @@
         <a href="/html/ommikkelsen.html">Om By Mikkelsen</a>
         <a href="/html/kontakt.html">Kontakt</a>
       </div>
-      <div class="meny_book">
-        <div class="button_border_light">
-          <button class="lightbutton">BOOK TID</button>
+      
+      <div id="burger_menu">
+        <div class="site_links hidden">
+          <div class="navLink"><a href="/html/behandlinger.html">Behandlinger</a></div>
+          <div class="navLink"><a href="/html/prisliste.html">Prisliste</a></div>
+          <div class="navLink"><a href="/html/ommikkelsen.html">Om By Mikkelsen</a></div>
+          <div class="navLink"><a href="/html/kontakt.html">Kontakt</a></div>
+          <div class="button_container">
+          <div class="button_border_light">
+            <button class="lightbutton">BOOK TID</button>
+          </div>
+        </div>
+        </div>
+        <div class="btn not-active">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        </div>
+        <div class="meny_book">
+          <div class="button_border_light">
+            <button class="lightbutton">BOOK TID</button>
+          </div>
         </div>
       </div>
     </nav>
@@ -28,6 +49,8 @@
 <video autoplay muted loop id="myVideo">
   <source src="/videos/splash_video.mp4" type="video/mp4">
 </video>
+
+<img src="/images/ewa.jpeg">
 
 <!-- Optional: some overlay text to describe the video -->
 <div class="content">
@@ -74,7 +97,7 @@
     <section id="trustpilot">
       <h2>Kunderne siger..</h2>
       <article>
-        <div class="container">
+        <div class="container leftContainer">
           <img src="/images/trust.png">
         </div>
         <div class="trustpilotC container">
