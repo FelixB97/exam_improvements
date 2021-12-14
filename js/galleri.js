@@ -39,7 +39,7 @@ function vis(produkter) {
       klon.querySelector(".billede3").src = produkt.billede3.guid;
       klon.querySelector(".billede4").src = produkt.billede4.guid;
 
-      //EventListener "click" + visDetaljer
+      //EventListener "click" -> Booking
       klon.querySelector("button").addEventListener("click", () => booking());
 
       container.appendChild(klon);
@@ -65,6 +65,9 @@ function addEventListenersToButtons() {
   document.querySelectorAll(".filter").forEach((btn) => {
     btn.addEventListener("click", filterBTNs);
   });
+  document.querySelectorAll(".single2").forEach((btn) => {
+    btn.addEventListener("click", topFunction);
+  });
 }
 
 //tilføj kategori til knap
@@ -78,6 +81,7 @@ function filterBTNs() {
   vis(produkter);
 }
 
+//Galleri
 function imageGallery() {
     const highlight = document.querySelector(".gallery-highlight");
     const previews = document.querySelectorAll(".room-preview img");
@@ -97,3 +101,10 @@ function imageGallery() {
     });
   }
 
+//Scroll to top after click
+// from W3Schools - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
+function topFunction() {
+  console.log("clicked");
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
