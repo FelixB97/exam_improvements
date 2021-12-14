@@ -9,6 +9,8 @@ nav {
     height: 65px;
     display: flex;
     justify-content: center;
+    position: fixed;
+    z-index: 1;
     
     .navContainer{
     display: flex;
