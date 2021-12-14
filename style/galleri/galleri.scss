@@ -1,11 +1,14 @@
+@import '../global_variables/mediaquery.scss';
+@import '../global_variables/colors.scss';
+
 body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-.whole {
+.galleri {
     margin-top: 55px;
     background-image: url(/public/images/navgalleri.png);
-    background-size: 100%;
+    background-size: 100% 15%;
     background-repeat: no-repeat;
     background-position: top;
     .filter_parent {
@@ -24,7 +27,7 @@ body {
                     flex-direction: column;
                 }
                 img {
-                    height: 90px;
+                    height: 70px;
                     width: auto;
                 }
                 p {
@@ -45,7 +48,7 @@ body {
     width: 100%;
 }
 
-#grid-article {
+#galleri_article {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -63,12 +66,12 @@ body {
 }
 
 .information {
-    display: flex;
     flex-basis: 500px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
+    text-align: left;
+    padding-top: 10px;
+    h1 {
+        text-align: left;
+    }
     p {
         padding: 5px 0;
     }
@@ -85,16 +88,92 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
+    img {
+        margin: 5px;
+        width: 28%;
+        opacity: 0.6;
+        cursor: pointer;
+        transition: opacity 0.4s ease;
+    }
+    img.room-active {
+        opacity: 1;
+    }
+    
 }
 
-.room-preview img {
-    width: 31%;
-    opacity: 0.6;
-    cursor: pointer;
-    transition: opacity 0.4s ease;
+#suggestions {
+    max-width: 1100px;
+    margin: 0 auto;
+    .single_double_galleri {
+        padding: 10px 0;
+    }
+    .synes_om {
+        margin: 10px;
+        p {
+            font-family: poppins-Bold;
+            font-size: 20px;
+        }
+        
+        .synes_om_container {
+            overflow-x: scroll;
+            display: -webkit-box;
+            .single2 {
+                width: 65%;
+                margin-right: 10px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                img {
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
-img.room-active {
-    opacity: 1;
+@media (min-width: $desktop) {
+    .information {
+        padding: 0 10px;
+    }
+    .gallery-highlight {
+        width: 80%;
+    }
+    .room-preview {
+        img {
+            width: 23%;
+        }
+    }
+    .galleri .filter_parent .filtre {
+        display: flex;
+        justify-content: center;
+    }
+
+    #galleri_article {
+        margin: 20px 0;
+    }
+
+    #suggestions {
+        .synes_om {
+            margin: 10px 0;
+            .synes_om_container {
+                overflow-x: scroll;
+                display: flex;
+                margin-top: 20px;
+                .single2 {
+                    width: 100%;
+                    margin-right: 20px;
+                    
+                }
+                .single2:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+
+
 }

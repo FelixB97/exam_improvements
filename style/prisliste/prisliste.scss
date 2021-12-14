@@ -12,36 +12,47 @@ h2 {
     margin: 90px 0;
 }
 
-.parent {
-    margin: 0 auto;
-    max-width: 1100px;
+.prisliste_section {
+    margin: 0 20px;
+}
+
+.container_table {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     grid-template-rows: repeat(2, 2fr);
-    grid-column-gap: 10px;
+    grid-column-gap: 50px;
     grid-row-gap: 30px;
-    .container {
-        margin: 0 auto;
-    }
-    table {
-        .single {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-
-            padding: 10px 0;
-            .behandlingspris,
-            .varighed {
-                white-space: nowrap;
-            }
-        }
-        td:first-child {
-            width: 45% ;
-        }
-        
-    }
+    max-width: 1100px;
+    margin: 0 auto;
 }
+
+table {
+    .table {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    td:first-child {
+        width: 45% ;
+    }
+    
+    .single {
+        padding: 5px 0;
+        .behandlingspris,
+        .varighed {
+            white-space: nowrap;
+            vertical-align: text-top;
+            text-align: center;
+        }
+    }
+    
+}
+
+
+
 
 
 @media (min-width: $desktop){
@@ -49,11 +60,15 @@ h2 {
         .single_line {
             display: none;
         }
-        .parent {
+        .container_table {
             background-image: url("/public/illustrations/frame.png");
-            background-size: contain;
+            background-size: 100% 100%;
             background-repeat: no-repeat;
             background-position: center;
+            grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+            padding: 50px;
+
+            align-items: flex-start;
         }
     }
 }
