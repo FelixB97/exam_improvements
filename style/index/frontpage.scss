@@ -109,6 +109,8 @@ body {
         padding: 0 50px 0 50px;
         padding-bottom: 0;
         overflow-y:scroll;
+        display: flex;
+        flex-direction: column;
     }
     article {
         display: flex;
@@ -167,20 +169,6 @@ body {
         font-family: poppins-Medium;
         font-size: 20px;
     }
-}
-
-
-//pratisk_info section
-
-#praktisk_info {
-    margin-bottom: 150px;
-    .topColumn {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-bottom: 75px;
-    }
-    
 }
 
 //instagram_feed section 
