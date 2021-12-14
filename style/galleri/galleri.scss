@@ -7,11 +7,12 @@ body {
 }
 .galleri {
     background-image: url(/public/images/navgalleri.png);
-    background-size: 100% 15%;
+    background-size: 100% 20%;
     background-repeat: no-repeat;
     background-position: top;
     .filter_parent {
         overflow-x: scroll;
+        padding-top: 20px;
         .filtre {
             width: auto;
             white-space:nowrap; 
