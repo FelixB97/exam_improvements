@@ -35,8 +35,13 @@ function vis(produkter) {
         // console.log(produkt);
         const klon = temp.cloneNode(true).content;
         klon.querySelector(".behandlingsnavn").textContent = produkt.behandlingsnavn;
-        klon.querySelector(".behandlingspris").textContent = produkt.pris;
-        klon.querySelector(".varighed").textContent = produkt.varighed + " min";        
+        klon.querySelector(".behandlingspris").textContent = produkt.pris + " kr.";
+        if (produkt.varighed == "") {
+          klon.querySelector(".varighed").textContent = "";  
+        } else {
+          klon.querySelector(".varighed").textContent = produkt.varighed + " min";  
+        }
+              
         //EventListener "click" + visDetaljer
         /* klon.querySelector("article").addEventListener("click", () => visDetaljer(produkt));   */      
         container.appendChild(klon);
