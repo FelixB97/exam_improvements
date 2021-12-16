@@ -46,8 +46,54 @@
           </div>
         </div>
     </nav>
-    <section id="filtering"></section>
-    <section id="booking_options"></section>
+    
+    <section id="booking_options">
+      <h1>Booking</h1>
+      <div class="booking_filtre">
+        <div class="button_container">
+          <div class="button_border_light">
+            <button class="filter valgt lightbutton" data-item="alle">Alle</button>
+          </div>
+        </div>
+        <div class="button_container">
+          <div class="button_border_light">
+            <button class="filter lightbutton" data-item="8">CND Gelnegle</button>
+          </div>
+        </div>
+        <div class="button_container">
+          <div class="button_border_light">
+            <button class="filter lightbutton" data-item="9">Forlængelse</button>
+          </div>
+        </div>
+        <div class="button_container">
+          <div class="button_border_light">
+            <button class="filter lightbutton" data-item="10">Forstærkning</button>
+          </div>
+        </div>
+        <div class="button_container">
+          <div class="button_border_light">
+            <button class="filter lightbutton" data-item="11">Ekstra</button>
+          </div>
+        </div>
+      </div>
+  
+      <section id="booking_container"></section>
+      <template>
+        <article class="booking_grid">
+          <img src="/public/images/placeholder.png" alt="" class="behandling_billede"/>
+          <h3 class="behandling_navn"></h3>
+          <p class="behandling_pris"></p>
+          <a href="/booking_kalendar">
+            <div class="button_container">
+              <div class="button_border_light">
+                <button class="lightbutton">Book Tid</button>
+              </div>  
+            </div>  
+          </a>
+        </article>
+      </template>
+  
+    </section>
     <footer>
       <div class="footer_container">
         <div class="footer_col double">
@@ -102,5 +148,6 @@
       </div>
     </footer>
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/js/booking.js"></script>
   </body>
 </html>

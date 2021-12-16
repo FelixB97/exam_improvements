@@ -32,6 +32,9 @@
     .col1 {
         flex-basis: 500px;
         flex-grow: 1;
+        img {
+            border-radius: 5px;
+        }
     }
     .paragraph {
         padding: 20px 0;

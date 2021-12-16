@@ -1,0 +1,51 @@
+#booking_options {
+    h1 {
+        margin-top: 10px;
+    }
+}
+#booking_container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    background-image: url("/public/illustrations/booking.svg");
+    background-size: contain;
+    .booking_grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .behandling_navn {
+            font-family: 'poppins';
+            font-size: 20px;
+            margin: 5px 0;
+        }
+        .behandling_pris {
+            font-family: 'poppins-Bold';
+            margin: 5px 0;
+        }
+        img {
+            width: 100%;
+            min-height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    } 
+}
+
+.booking_filtre {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 1100px;   
+    margin: 0 auto;   
+    padding: 10px 0;
+    .button_container {
+        padding: 10px 0;
+    }
+}
