@@ -3,10 +3,6 @@ let filter = "alle";
 let produkter;
 const temp = document.querySelector("template");
 
-//URL + ID
-const urlParams = new URLSearchParams(window.location.search);
-const id = urlParams.get("id");
-
 const link = "http://felixbryld.dk/kea/final_exam//wp-json/wp/v2/prisliste?per_page=100";
 
 //Load Site + function
@@ -42,21 +38,8 @@ function vis(produkter) {
           klon.querySelector(".varighed").textContent = produkt.varighed + " min";  
         }
               
-        //EventListener "click" + visDetaljer
-        /* klon.querySelector("article").addEventListener("click", () => visDetaljer(produkt));   */      
         container.appendChild(klon);
   });
-  //Alle produkters ID
-  produkter.forEach((produkt) => {
-    if (id == produkt.id) {
-      visDetaljer(produkt);
-    }
-  });
-}
-
-//Location.href til Singlview
-function visDetaljer(produkt) {
-  location.href = `singleview.html?id=${produkt.id}`;
 }
 
 //Kommer fra hentData
