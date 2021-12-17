@@ -3,7 +3,7 @@ const { resolve } = require('path');
 const { defineConfig } = require('vite');
 
 module.exports = defineConfig ({
-  base: 'http://felixbryld.dk/kea/examtest/test1/',
+  base: 'http://felixbryld.dk/kea/eksamen/',
   // base: './',
   build: {
     rollupOptions: {
