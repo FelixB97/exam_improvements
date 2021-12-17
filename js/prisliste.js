@@ -1,5 +1,5 @@
 //FILTER
-let filter = "alle";
+// let filter = "alle";
 let produkter;
 const temp = document.querySelector("template");
 

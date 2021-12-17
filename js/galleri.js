@@ -1,5 +1,5 @@
 //FILTER
-let filter = document.querySelector("#default_filter").dataset.item;
+
 
 let produkter;
 let container = document.querySelector("#container");
@@ -12,9 +12,9 @@ const id = urlParams.get("id");
 const link = "http://felixbryld.dk/kea/final_exam//wp-json/wp/v2/galleri?per_page=100";
 
 //Load Site + function
-document.addEventListener("DOMContentLoaded", hentData);
+// document.addEventListener("DOMContentLoaded", hentData);
 
-async function hentData() {
+export default async function galleriHentData() {
   const respons = await fetch(link);
   produkter = await respons.json();
   addEventListenersToButtons();

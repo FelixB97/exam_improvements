@@ -2,31 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex">
+    <meta name="description" content="Nelge salon i Herlev">
     <title>By Mikkelsen</title>
   </head>
   <body>
     <nav>
       <div class="navContainer">
       <div>
-        <a href="/index.html"><img src="./images/logo.png" id="header_logo"></a>
+        <a href="./index.html"><img src="./images/logo.png" id="header_logo"></a>
       </div>
       <div class="main_links">
-        <a href="/html/galleri.html">Galleri</a>
-        <a href="/html/prisliste.html">Prisliste</a>
-        <a href="/html/aabningstider.html">Åbningstider</a>
-        <a href="/html/ommikkelsen.html">Om By Mikkelsen</a>
-        <a href="/html/kontakt.html">Kontakt</a>
+        <a href="./html/galleri.html">Galleri</a>
+        <a href="./html/prisliste.html">Prisliste</a>
+        <a href="./html/aabningstider.html">Åbningstider</a>
+        <a href="./html/ommikkelsen.html">Om By Mikkelsen</a>
+        <a href="./html/kontakt.html">Kontakt</a>
       </div>
       
       <div id="burger_menu">
         <div class="site_links hidden">
-          <div class="navLink"><a href="/html/galleri.html">Galleri</a></div>
-          <div class="navLink"><a href="/html/prisliste.html">Prisliste</a></div>
-          <div class="navLink"><a href="/html/aabningstider.html">Åbningstider</a></div>
-          <div class="navLink"><a href="/html/ommikkelsen.html">Om By Mikkelsen</a></div>
-          <div class="navLink"><a href="/html/kontakt.html">Kontakt</a></div>
+          <div class="navLink"><a href="./html/galleri.html">Galleri</a></div>
+          <div class="navLink"><a href="./html/prisliste.html">Prisliste</a></div>
+          <div class="navLink"><a href="./html/aabningstider.html">Åbningstider</a></div>
+          <div class="navLink"><a href="./html/ommikkelsen.html">Om By Mikkelsen</a></div>
+          <div class="navLink"><a href="./html/kontakt.html">Kontakt</a></div>
           <div class="button_container">
           <div class="button_border_light">
             <button class="lightbutton">BOOK TID</button>
@@ -49,19 +51,19 @@
     <section id="splash">
       <!-- The video -->
 <video autoplay muted loop id="myVideo">
-  <source src="/videos/splash_video.mp4" type="video/mp4">
+  <source src="/videos/splash.mp4" type="video/mp4">
 </video>
 
-<img src="/images/ewa.jpeg">
+<img src="/images/splash.png">
 
 <!-- Optional: some overlay text to describe the video -->
 <div class="content">
   <h1>Velkommen til By Mikkelsen</h1>
   <p>
-    Dette er stedet for du kan føle dig velkommen og tryg. 
-    Hos By Mikkelsen kan du finde neglebehandler tilpasset<br> til dig og dine negle. 
-    Alle de produkter som bliver brugt hos By Mikkelsen er det professionelle mærke CND<br> Shellac, 
-    de giver de smukkeste lakeringer med høj glans.
+    By Mikkelsen er stedet hvor du kan føle dig velkommen og tryg. <br>
+    Hos os kan du finde neglebehandlinger til lige præcis dig og dine negle.<br>
+    Alle de produkter som bliver brugt hos By Mikkelsen er det professionelle mærke<br>CND Shellac, 
+    som giver de smukkeste lakeringer med høj glans og holdbarhed.
   </p>
   <!-- Use a button to pause/play the video with JavaScript -->
   <div class="button_container">
@@ -183,7 +185,7 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./main.js"></script>
     <!-- move this to js  -->
     <script>
       !function(){"use strict";var t=document,e=function(){var e,r,o;if(t.getElementsByClassName)e=t.getElementsByClassName("trustpilot-widget");else if(t.querySelectorAll)e=t.querySelectorAll(".trustpilot-widget");else{var s=[],a=new RegExp("(^| )trustpilot-widget( |$)"),l=t.body.getElementsByTagName("*");for(r=0,o=l.length;r<o;r++)a.test(l[r].className)&&s.push(l[r]);e=s}for(r=0;r<e.length;++r)for(var i=e[r];i.firstChild;)i.removeChild(i.firstChild)};e(),t.addEventListener?t.addEventListener("DOMContentLoaded",e):t.attachEvent("onreadystatechange",function(){"complete"==t.readyState&&e()});var r="https:"==t.location.protocol?"https:":"http:",o=r+"//widget.trustpilot.com",s=t.createElement("script");s.src=o+"/bootstrap/v5/tp.widget.bootstrap.min.js",s.async=!0,s.defer=!0,t.querySelector("head").appendChild(s)}();

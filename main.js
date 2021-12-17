@@ -1,20 +1,21 @@
 "use strict";
 import './style/style.scss';
 
-import loadFrontpage from '/js/frontpage.js';
-import loadMailApp from '/js/components/emailer.js';
-import loadPrisliste from '/js/prisliste.js';
-import burgerMenu from '/js/components/burgermenu.js';
+import loadFrontpage from './js/frontpage.js';
+import loadMailApp from './js/components/emailer.js';
+import loadPrisliste from './js/prisliste.js';
+import burgerMenu from './js/components/burgermenu.js';
+import galleriHentData from './js/galleri.js';
 
 init();
 
 function init() {
-//init start
-burgerMenu();
-//determine site page
-const path = window.location.pathname;
-const page = path.split("/").pop();
-loadCorrectPageCode(page);
+    console.log("js code loading..")
+    burgerMenu();
+    //determine site page
+    const path = window.location.pathname;
+    const page = path.split("/").pop();
+    loadCorrectPageCode(page);
 }
 
 function loadCorrectPageCode(title) {
@@ -29,8 +30,14 @@ function loadCorrectPageCode(title) {
     if (title == "prisliste.html") {
         loadPrisliste();
         }
+    if (title == "galleri.html") {
+        // let filter = document.querySelector("#default_filter").dataset.item;
+        window.filter = document.querySelector("#default_filter").dataset.item;
+        galleriHentData();
+        }
+
     
-    
+        
     
 }
 

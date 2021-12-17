@@ -1,7 +1,7 @@
 export default function burgerMenu() {
     // console.log("buttons ready!");
     const btn = document.querySelector(".btn");
-  
+    buttonEvents();
     btn.addEventListener('click', function() {
       //toggles burger visible hidden
       if (btn.classList[1]=="not-active") {
@@ -39,4 +39,22 @@ export default function burgerMenu() {
       }
   
   });
+  }
+
+  function buttonEvents() {
+    console.log("going to booking..")
+    document.querySelector("body nav .meny_book").addEventListener("click", goToBooking);
+    document.querySelector("body nav .button_container").addEventListener("click", goToBooking);
+  }
+
+  function goToBooking() {
+    const path = window.location.pathname;
+    const page = path.split("/").pop();
+    if (page == "index.html") {
+      window.location.href = "./html/booking.html";
+    }
+    else {
+      window.location.href = "./booking.html";
+    }
+    
   }

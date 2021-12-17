@@ -3,6 +3,7 @@
 export default function loadFrontpage() {
     console.log("Frontpage Code Loading..");
     getReviews();
+    splashEvents();
 }
 
 async function getReviews() {
@@ -25,7 +26,6 @@ function addReviewsToDom(reviewData) {
     console.log("writing reviews in HTML")
     const container = document.querySelector(".trustpilotC");
     const template = document.querySelector("#reviewTemplate");
-    console.log(reviewData);
     container.innerHTML = "";
 
     reviewData.forEach( (review) => {
@@ -47,3 +47,12 @@ function addReviewsToDom(reviewData) {
     })
 
 }
+
+function splashEvents() {
+    console.log("going to booking..")
+    document.querySelector("#splash .button_border_light").addEventListener("click", goToBooking);
+  }
+
+  function goToBooking() {
+    window.location.href = "./html/booking.html";
+  }

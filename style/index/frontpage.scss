@@ -15,7 +15,7 @@ body {
     // margin-top: 55px;
     text-align: center;
     position: relative;
-    background: url("/videos/rain.mp4") no-repeat;
+    background: url("/videos/splash.mp4") no-repeat;
     video {
         position: absolute;
         width: 100%;
@@ -41,6 +41,16 @@ body {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
+        div {
+            height: 50px;
+            width: 200px;
+        }
+        button {
+            height: 45px;
+            width: 195px;
+            font-size: 20px;
+            font-family: poppins-Bold;
+        }
     }
     p {
         padding: 0 40px 20px 40px;
@@ -74,7 +84,7 @@ body {
     .imgContainer {
         width: 100px;
         height: 100px;
-        background-image: url("illustrations/valuebackground.png");
+        background-image: url("../illustrations/valuebackground.png");
         background-size: cover;
         transition: 0.2s;
     }

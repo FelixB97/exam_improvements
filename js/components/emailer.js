@@ -1,6 +1,6 @@
 "use strict";
-/* import{ init } from 'emailjs-com';
-import emailjs from 'emailjs-com'; */
+import{ init } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 export default function loadMailApp() {
     init("user_0u0tmnrcbXhVuxm60rDOs");
@@ -117,11 +117,11 @@ function updateValues(imputPath, templateName) {
     
     if (isNameValid == true && isEmailValid == true && isMessageValid == true) {
         document.querySelector("#send_email").style.borderColor = "#46F591";
-        document.querySelector("#send_email h2").style.color = "#46F591";
+        // document.querySelector("#send_email h2").style.color = "#46F591";
     }
     if (isNameValid == false || isEmailValid == false || isMessageValid == false) {
         document.querySelector("#send_email").style.borderColor = "#c1272d";
-        document.querySelector("#send_email h2").style.color = "#c1272d";
+        // document.querySelector("#send_email h2").style.color = "#c1272d";
     }
     
     
