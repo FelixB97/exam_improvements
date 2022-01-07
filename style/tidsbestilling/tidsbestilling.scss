@@ -1,0 +1,69 @@
+.tidsbestilling_section {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    .col_calendar {
+        background-color: red;
+        flex-grow: 3;
+        .calendar_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            .month_picker:hover {
+                background-color: darkgray;
+            }
+            .year_picker {
+                display: flex;
+                align-items: center;
+                .year_change {
+                    height: 40px;
+                    width: 40px;
+                    display: grid;
+                    place-items: center;
+                    cursor: pointer;
+                    margin: 0 10px;
+                    :hover {
+                        background-color: darkgray;
+                    }
+                }
+            }
+        }
+        .calendar_body {
+            padding: 10px;
+            .calendar_week_day {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                font-weight: bold;
+                div {
+                    display: grid;
+                    place-items: center;
+                }
+            }
+            .calendar_days {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                gap: 2px;
+                place-items: center;
+                div {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px;
+                    position: relative;
+                    cursor: pointer;
+                }
+            } 
+        }
+    }
+
+    .col_bestilling {
+        flex-grow: 1;
+    }
+    
+}
