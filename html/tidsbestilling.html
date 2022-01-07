@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="../images/favicon.png" />
+    <link rel="stylesheet" href="/style/tidsbestilling/dycalendar.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex">
     <meta name="description" content="Nelge salon i Herlev">
@@ -51,60 +52,18 @@
     
     <section class="tidsbestilling_section">
       <div class="col_calendar">
-        <div class="calendar_header">
-          <span class="month_picker" id="month_picker">
-            January
-          </span>
-          <div class="year_picker">
-            <span class="year_change" id="prev_year">
-              <!-- pre-element output what are exactly written -->
-              <pre>&lt;</pre>
-            </span>
-            <span id="year">
-              2022
-            </span>
-            <span class="year_change" id="next_year">
-              <!-- pre-element output what are exactly written -->
-              <pre>></pre>
-            </span>
+        <div class="some-class">
+          <div id="calendar">
+              <div id="dycalendar-month" class="dycalendar-container"></div>
           </div>
-        </div>
-
-        <div class="calendar_body">
-          <div class="calendar_week_day">
-            <div>Man</div>
-            <div>Tir</div>
-            <div>Ons</div>
-            <div>Tor</div>
-            <div>Fre</div>
-            <div>Lør</div>
-            <div>Søn</div>
-          </div>
-          <div class="calendar_days">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-          </div>
-        </div>
-      
+      </div>
       </div>
 
       <div class="col_bestilling">
-        <h1>Navn på bestilling</h1>
+        <h1 class="behandling_navn">Navn på bestilling</h1>
         <div class="small_child">
-          <p>Varighed</p>
-          <p>Pris</p>
+          <p class="behandling_varighed">Varighed</p>
+          <p class="behandling_pris">Pris</p>
         </div>
       </div>
 
@@ -165,6 +124,18 @@
       </div>
     </footer>
     <script type="module" src="../main.js"></script>
-    <script type="module" src="/js/tidbestilling.js"></script>
+    <script src="/js/dycalendar.min.js"></script>
+    <script src="/js/tidsbestilling.js"></script>
+    
+    <script>
+        dycalendar.draw({
+            target : "#calendar",
+            type : "month",
+            highlighttargetdate : true,
+            dayformat: "full",
+            monthformat: "full",
+            prevnextbutton: "show"
+        })
+    </script>
   </body>
 </html>
