@@ -48,9 +48,69 @@
         </div>
       </div>
     </nav>
-    <section id="dato_valg"></section>
-    <section id="tids_valg"></section>
-    <section id="oversigt"></section>
+    
+    <section class="tidsbestilling_section">
+      <div class="col_calendar">
+        <div class="calendar_header">
+          <span class="month_picker" id="month_picker">
+            January
+          </span>
+          <div class="year_picker">
+            <span class="year_change" id="prev_year">
+              <!-- pre-element output what are exactly written -->
+              <pre>&lt;</pre>
+            </span>
+            <span id="year">
+              2022
+            </span>
+            <span class="year_change" id="next_year">
+              <!-- pre-element output what are exactly written -->
+              <pre>></pre>
+            </span>
+          </div>
+        </div>
+
+        <div class="calendar_body">
+          <div class="calendar_week_day">
+            <div>Man</div>
+            <div>Tir</div>
+            <div>Ons</div>
+            <div>Tor</div>
+            <div>Fre</div>
+            <div>Lør</div>
+            <div>Søn</div>
+          </div>
+          <div class="calendar_days">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="col_bestilling">
+        <h1>Navn på bestilling</h1>
+        <div class="small_child">
+          <p>Varighed</p>
+          <p>Pris</p>
+        </div>
+      </div>
+
+    </section>
+
+
     <footer>
       <div class="footer_container">
         <div class="footer_col double">
@@ -105,5 +165,6 @@
       </div>
     </footer>
     <script type="module" src="../main.js"></script>
+    <script type="module" src="/js/tidbestilling.js"></script>
   </body>
 </html>
