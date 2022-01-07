@@ -8,6 +8,9 @@ function loadInformation() {
     document.querySelector(".behandling_navn").textContent = behandlingsnavn;
     document.querySelector(".behandling_varighed").textContent = varighed + " min";
     document.querySelector(".behandling_pris").textContent = pris + " kr.";
+    if (varighed === "") {
+        document.querySelector(".behandling_varighed").textContent = "";
+    }
 }
 
 
