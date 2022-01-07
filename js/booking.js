@@ -33,7 +33,7 @@ function vis(produkter) {
             if (produkt.billede !== false) {
                 klon.querySelector(".behandling_billede").src = produkt.billede.guid;
             }
-          klon.querySelector("article").addEventListener("click", () => visDetaljer(produkt));
+          klon.querySelector(".button_container").addEventListener("click", () => transfer(produkt));
 
           container.appendChild(klon);
         }
@@ -41,14 +41,16 @@ function vis(produkter) {
     //Alle produkters ID
     produkter.forEach((produkt) => {
         if (id == produkt.id) {
-            visDetaljer(produkt);
+            transfer(produkt);
          }
     });
 }
 
-//Location.href til Singlview
-function visDetaljer(produkt) {
-  location.href = `singleview.html?id=${produkt.id}`;
+//Location.href til Transfer
+function transfer(produkt) {
+  window.localStorage.setItem("behandlingsnavn", produkt.behandlingsnavn);
+  window.localStorage.setItem("pris", produkt.pris);
+  window.localStorage.setItem("varighed", produkt.varighed);
 }
 
 //Kommer fra hentData
