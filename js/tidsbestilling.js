@@ -3,6 +3,11 @@ const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 const circles = document.querySelectorAll(".circle");
 
+//add event to payment button
+document.querySelector("#next").addEventListener("click", function(){
+    window.location.href="./payment.html";
+})
+
 let currentActive = 1;
 
 next.addEventListener("click", () => {
