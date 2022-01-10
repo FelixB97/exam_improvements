@@ -6,6 +6,7 @@ import loadMailApp from './js/components/emailer.js';
 import loadPrisliste from './js/prisliste.js';
 import burgerMenu from './js/components/burgermenu.js';
 import galleriHentData from './js/galleri.js';
+import paymentini from './js/payment';
 
 init();
 
@@ -35,7 +36,9 @@ function loadCorrectPageCode(title) {
         window.filter = document.querySelector("#default_filter").dataset.item;
         galleriHentData();
         }
-
+    if (title == "payment.html") {
+        paymentini();
+        }
     
         
     
