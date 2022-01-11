@@ -3,7 +3,7 @@ const { resolve } = require('path');
 const { defineConfig } = require('vite');
 
 module.exports = defineConfig ({
-  base: 'http://felixbryld.dk/kea/eksamen/',
+  base: 'http://felixbryld.dk/kea/eksamen-version2/',
   // base: './',
   build: {
     rollupOptions: {
@@ -15,7 +15,8 @@ module.exports = defineConfig ({
         html4: resolve(__dirname, 'html/kontakt.html'),
         html5: resolve(__dirname, 'html/ommikkelsen.html'),
         html6: resolve(__dirname, 'html/prisliste.html'),
-        html7: resolve(__dirname, 'html/tidsbestilling.html')
+        html7: resolve(__dirname, 'html/tidsbestilling.html'),
+        html8: resolve(__dirname, 'html/payment.html')
       }
     }
   }

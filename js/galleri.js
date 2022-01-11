@@ -1,11 +1,10 @@
 //FILTER
 
-
 let produkter;
 let container = document.querySelector("#container");
 let temp = document.querySelector("template");
 
-//URL + ID
+//URL + ID bruges ikke længere
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
@@ -45,7 +44,7 @@ function vis(produkter) {
       container.appendChild(klon);
     }
   });
-  //Alle produkters ID
+  //Alle produkters ID bruges heller ikke længere
   produkter.forEach((produkt) => {
     if (id == produkt.id) {
       visDetaljer(produkt);
@@ -57,7 +56,7 @@ function vis(produkter) {
 
 //Location.href til Booking
 function booking() {
-  location.href = `/html/booking.html`;
+  location.href = `/kea/eksamen-version2/html/booking.html`;
 }
 
 //Kommer fra hentData
@@ -72,6 +71,7 @@ function addEventListenersToButtons() {
 
 //tilføj kategori til knap
 function filterBTNs() {
+  console.log("FILTER");
   filter = this.dataset.item;
   document.querySelectorAll(".filter").forEach((btn) => {
     btn.classList.remove("valgt");
@@ -94,14 +94,14 @@ function imageGallery() {
         // small bliver erstattet med big
         const bigSrc = smallSrc.replace("small", "big");
         highlight.src = bigSrc;
-        console.log(bigSrc);
+        // console.log(bigSrc);
         previews.forEach((preview) => preview.classList.remove("room-active"));
         preview.classList.add("room-active");
       });
     });
   }
 
-//Scroll to top after click
+//Scroll to top after click bruges ikke længere
 // from W3Schools - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
 function topFunction() {
   console.log("clicked");

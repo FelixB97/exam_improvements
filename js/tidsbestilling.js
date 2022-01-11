@@ -1,44 +1,18 @@
-const progress = document.getElementById("progress");
-const prev = document.getElementById("prev");
-const next = document.getElementById("next");
-const circles = document.querySelectorAll(".circle");
+
+export default function tidsbestillingInit() {
+    paymentButtonEvent();
+    setTimeout(loadBestilling, 1000);
+    loadInformation();
+}
+
+
 
 //add event to payment button
+function paymentButtonEvent() {
 document.querySelector("#next").addEventListener("click", function(){
     window.location.href="./payment.html";
 })
-
-let currentActive = 1;
-
-next.addEventListener("click", () => {
-    currentActive++;
-    if (currentActive > circles.length) {
-        currentActive = circles.length;
-    }
-    update();
-});
-prev.addEventListener("click", () => {
-    currentActive--;
-    if (currentActive < 1) {
-        currentActive = 1;
-    }
-    update();
-});
-
-
-function update() {
-    circles.forEach((circle, i) => {
-        if (i < currentActive) {
-            circle.classList.add("active");
-        } else {
-            circle.classList.remove("active");
-        }
-    });
-    const actives = document.querySelectorAll(".active");
-    /* console.log((actives.length /circles.length) * 100); */
-    progress.style.width = ((actives.length - 1) / (circles.length - 1)) * 100 + "%";
 }
-
 
 function loadInformation() {
     const behandlingsnavn = window.localStorage.getItem("behandlingsnavn");
@@ -82,5 +56,3 @@ function addClick() {
 function refresh() {
     setTimeout(loadBestilling, 1000);
 }
-setTimeout(loadBestilling, 1000);
-loadInformation();

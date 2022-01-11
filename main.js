@@ -7,6 +7,9 @@ import loadPrisliste from './js/prisliste.js';
 import burgerMenu from './js/components/burgermenu.js';
 import galleriHentData from './js/galleri.js';
 import paymentini from './js/payment';
+import Progressinit from'./js/components/progressbar.js';
+import tidsbestillingInit from './js/tidsbestilling';
+import calenderInit from './js/dycalendar.js'
 
 init();
 
@@ -38,8 +41,14 @@ function loadCorrectPageCode(title) {
         }
     if (title == "payment.html") {
         paymentini();
+        Progressinit();
         }
-    
+    if (title == "tidsbestilling.html") {
+        Progressinit();
+        tidsbestillingInit();
+        calenderInit();
+
+        }
         
     
 }

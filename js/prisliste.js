@@ -42,7 +42,7 @@ function vis(produkter) {
   });
 }
 
-//Kommer fra hentData
+//ikke brugt længere
 function addEventListenersToButtons() {
   document.querySelectorAll(".filter").forEach((btn) => {
     btn.addEventListener("click", filterBTNs);

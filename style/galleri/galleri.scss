@@ -13,7 +13,11 @@ body {
     .filter_parent {
         overflow-x: scroll;
         padding-top: 20px;
+        .filter:hover {
+            background: radial-gradient($darkPink 0%, $babyPink 50%, #ffffff00 70%);
+        }
         .filtre {
+            cursor: pointer;
             width: auto;
             white-space:nowrap; 
             .filter_container {
@@ -183,4 +187,8 @@ body {
 
 
 
+}
+
+.valgt {
+    background: radial-gradient(rgb(206, 166, 172) 0%, $babyPink 50%, #ffffff00 70%)!important;
 }

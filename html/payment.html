@@ -49,6 +49,25 @@
         </div>
       </div>
     </nav>
+
+    <!-- the progress bar -->
+    <div id="progressSpacer">
+    <article id="progressBar">
+      <div id="barText">
+        <p class="pointText Text1">Vælg Tid</p>
+        <p class="pointText Text2">Betaling</p>
+        <p class="pointText Text3">Gennemført</p>
+      </div>
+      <div id="bar">
+        <div class="progressPoint Point1"></div>
+        <div class="space1"></div>
+        <div class="progressPoint Point2"></div>
+        <div class="space2"></div>
+        <div class="progressPoint Point3"></div>
+      </div>
+    </article>
+  </div>
+
     <!-- content goes here -->
 
     <section id="payment-content">
@@ -180,9 +199,11 @@
 </section>
 
 <section id="thankyou" class="hidden">
-  <h2>Tak for din bestilling!</h2>
-  <p>vi ses på bryggen</p>
-  <p class="atip">click hvorsomhelst for at fortsætte.</p>
+  <h2>Tak fordi du booker hos os!</h2>
+  <p>vi ses til den bestilte tid.</p>
+  <p class="atip">klik hvor som helst for at fortsætte.</p>
+  <img class="thankImage" src="../illustrations/mail.svg">
+  <p class="bot-text" >Du burde inden for 5 minutter modtage en mail med kvitering.</p>
 </section>
 
 <div class="button_border_light payment-button">
@@ -245,22 +266,6 @@
     </footer>
     <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
-    
     <script type="module" src="../main.js"></script>
-    <!-- <script src="/js/dycalendar.min.js"></script>
-    <script src="/js/tidsbestilling.js"></script> -->
-    
-    <script src="/js/payment.js"></script>
-    
-    <!-- <script>
-        dycalendar.draw({
-            target : "#calendar",
-            type : "month",
-            highlighttargetdate : true,
-            dayformat: "full",
-            monthformat: "full",
-            prevnextbutton: "show"
-        })
-    </script> -->
   </body>
 </html>
